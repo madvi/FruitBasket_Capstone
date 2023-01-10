@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FruitsInBowl {
+public class FruitBowl {
 
     public static void main(String[] args) throws IOException {
 
@@ -15,6 +15,7 @@ public class FruitsInBowl {
         Fruit fruit5 = new Fruit("Kiwi", "Green", "Small");
         Fruit fruit6 = new Fruit("Guava", "yellow", "Large");
 
+
         List<Fruit> fruitBowl = new ArrayList<>();//storing the fruits in arraylist
         fruitBowl.add(fruit1);
         fruitBowl.add(fruit2);
@@ -23,9 +24,8 @@ public class FruitsInBowl {
         fruitBowl.add(fruit5);
         fruitBowl.add(fruit6);
 
-
-        FruitsInBasket fruitInBasket = new FruitsInBasket();
-        fruitInBasket.sortByColour(fruitBowl);
+        Segregator segregator = new Segregator(fruitBowl);
+        segregator.sortByColour(fruitBowl);
 
 
     }

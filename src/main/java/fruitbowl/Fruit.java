@@ -2,13 +2,13 @@ package fruitbowl;
 
 public class Fruit {
     private String name;
-    public String color;
+    public String colour;
     private String size;
 
 
-    public Fruit(String name, String color, String size) {
+    public Fruit(String name, String colour, String size) {
         this.name = name;
-        this.color = color;
+        this.colour = colour;
         this.size = size;
 
     }
@@ -17,8 +17,8 @@ public class Fruit {
         return name;
     }
 
-    public String getColor() {
-        return color;
+    public String getColour() {
+        return colour;
     }
 
     public String getSize() {
